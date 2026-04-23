@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siva Saran Gondi (Sharan) — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('/Users/gon/claude/career-ops/fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('/Users/gon/claude/career-ops/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/Users/gon/claude/career-ops/fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/Users/gon/claude/career-ops/fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0.6in;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header { margin-bottom: 18px; }
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+  .header-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+    letter-spacing: 0.01em;
+  }
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    color: #555;
+  }
+  .contact-row a { color: #555; text-decoration: none; }
+  .contact-row .separator { color: #ccc; }
+
+  /* SECTIONS */
+  .section { margin-bottom: 16px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: hsl(187,74%,32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 9px;
+  }
+
+  /* SUMMARY */
+  .summary-text { font-size: 10.5px; line-height: 1.7; color: #2f2f2f; }
+
+  /* COMPETENCIES */
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 7px; }
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9.5px;
+    font-weight: 500;
+    color: hsl(187,74%,28%);
+    background: hsl(187,40%,95%);
+    padding: 3px 9px;
+    border-radius: 3px;
+    border: 1px solid hsl(187,40%,88%);
+  }
+
+  /* EXPERIENCE */
+  .job { margin-bottom: 13px; }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 2px;
+  }
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(270,70%,45%);
+  }
+  .job-period { font-size: 10px; color: #777; white-space: nowrap; }
+  .job-role { font-size: 10.5px; font-weight: 600; color: #333; margin-bottom: 2px; }
+  .job-context { font-size: 10px; color: #888; font-style: italic; margin-bottom: 5px; }
+  .job ul { padding-left: 16px; margin-top: 4px; }
+  .job li { font-size: 10.5px; line-height: 1.6; color: #333; margin-bottom: 3px; }
+  .job li strong { font-weight: 600; }
+  .job-tech { font-size: 9.5px; color: #888; margin-top: 5px; }
+
+  /* PROJECTS */
+  .project { margin-bottom: 10px; }
+  .project-header { display: flex; align-items: baseline; gap: 8px; margin-bottom: 3px; }
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: hsl(270,70%,45%);
+  }
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187,74%,32%);
+    background: hsl(187,40%,95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+  }
+  .project-desc { font-size: 10.5px; color: #444; line-height: 1.55; }
+  .project-tech { font-size: 9.5px; color: #888; margin-top: 2px; }
+
+  /* EDUCATION */
+  .edu-item { margin-bottom: 7px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .edu-title { font-weight: 600; font-size: 11px; color: #333; }
+  .edu-org { color: hsl(270,70%,45%); font-weight: 500; }
+  .edu-year { font-size: 10px; color: #777; white-space: nowrap; }
+  .edu-desc { font-size: 10px; color: #666; margin-top: 2px; line-height: 1.5; }
+
+  /* SKILLS */
+  .skills-block { margin-bottom: 6px; }
+  .skill-category { font-weight: 600; color: #333; font-size: 10.5px; }
+  .skill-values { font-size: 10.5px; color: #555; }
+
+  a { white-space: nowrap; }
+
+  .avoid-break, .job, .project, .edu-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; padding: 0.6in; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>Siva Saran Gondi (Sharan)</h1>
+    <div class="header-sub">Senior Software Engineer &mdash; Backend &amp; Data Platform</div>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+91 9482268123</span>
+      <span class="separator">|</span>
+      <a href="mailto:gondi.sharan@gmail.com">gondi.sharan@gmail.com</a>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/gondisharan">linkedin.com/in/gondisharan</a>
+      <span class="separator">|</span>
+      <span>Bengaluru, India</span>
+      <span class="separator">|</span>
+      <span>Open to: Remote &bull; Hybrid &bull; On-site Bengaluru</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Senior Software Engineer with 8+ years of experience building distributed data platforms and high-throughput backend systems at scale. At Sitecore, scaled an Apache Flink streaming pipeline 8.6x &mdash; from 5,000 to 43,000 records per minute &mdash; and cut catalog processing from 4 hours to 35 minutes. Proven across the full data engineering stack: real-time stream processing (Kafka, Flink), batch ETL (Spark, Airflow, Databricks), cloud infrastructure (AWS, Azure), and REST API development with Python, Java, and Golang. Seeking a Senior or Staff Software Engineer role at a top-tier product company to architect and own systems that operate at the scale of billions to trillions of records.
+    </div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section avoid-break">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Distributed Systems &amp; Scalability</span>
+      <span class="competency-tag">Apache Kafka &bull; Flink &bull; Spark</span>
+      <span class="competency-tag">Real-time Stream Processing</span>
+      <span class="competency-tag">Data Platform Engineering</span>
+      <span class="competency-tag">ETL &amp; Data Pipeline Design</span>
+      <span class="competency-tag">Backend &amp; Microservices Architecture</span>
+      <span class="competency-tag">AWS &amp; Azure Cloud Infrastructure</span>
+      <span class="competency-tag">Python &bull; Java &bull; Golang</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Sitecore</span>
+        <span class="job-period">Mar 2022 &ndash; Present</span>
+      </div>
+      <div class="job-role">Senior Software Engineer</div>
+      <div class="job-context">Data Platform Team &mdash; Sitecore Search (AI-powered content discovery &amp; e-commerce personalization platform) &bull; Bengaluru, India</div>
+      <ul>
+        <li><strong>Scaled Apache Flink streaming pipeline 8.6x</strong> &mdash; from 5,000 to 43,000 records per minute (RPM) &mdash; directly improving SLA compliance for enterprise e-commerce and content customers.</li>
+        <li><strong>Reduced catalog sync processing time by 85%</strong> (4 hours &rarr; 35 minutes) by re-architecting and migrating the job from a legacy framework to a new content search platform.</li>
+        <li><strong>Designed and built an end-to-end offline transaction ingestion pipeline</strong>, transforming raw store transaction data into structured user sessions and actionable analytics for enterprise clients.</li>
+        <li><strong>Engineered a document denormalization feature</strong> enabling incremental updates across interconnected dependent entities; automated propagation eliminates manual re-indexing &mdash; adopted by multiple enterprise e-commerce clients.</li>
+        <li><strong>Conducted load testing across 7 distributed microservices</strong> and subsystems; identified and resolved critical performance bottlenecks, improving system throughput and reliability.</li>
+        <li><strong>Resolved Airflow AWS security vulnerability</strong> by migrating from IAM Users to IAM Roles, enforcing least-privilege access and eliminating manual key rotation overhead.</li>
+        <li><strong>Developed analytics batch scripts</strong> computing views, clicks, CVR, and CTR metrics for AI-powered personalization widgets (trending items, best sellers, new arrivals, top deals).</li>
+        <li><strong>Built real-time Flink streaming job</strong> for an in-house Segment Builder, ingesting e-commerce user activity events into Apache Unomi (open-source CDP) for customer segmentation.</li>
+      </ul>
+      <div class="job-tech">Stack: Apache Flink, Apache Kafka, Apache Airflow, Python, Java, AWS (ECS, S3, Lambda, Batch, CloudWatch, IAM), Elasticsearch, Docker, CI/CD</div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Neudesic (an IBM Company)</span>
+        <span class="job-period">Jun 2021 &ndash; Mar 2022</span>
+      </div>
+      <div class="job-role">Senior Consultant</div>
+      <div class="job-context">BI Architecture Modernization &mdash; On-premises Hadoop to Azure Cloud migration &bull; Bengaluru, India</div>
+      <ul>
+        <li><strong>Migrated 10+ heterogeneous data sources</strong> (batch and streaming pipelines) from on-premises Hadoop to Azure Cloud, modernizing the full BI architecture stack.</li>
+        <li><strong>Upgraded real-time data streaming</strong> from StreamSets to Azure EventHub-capture, significantly improving scalability and operational fault tolerance.</li>
+        <li><strong>Orchestrated cloud ETL and workflow automation</strong> using Azure Data Factory for pipeline management and Azure Databricks for distributed Apache Spark-based processing.</li>
+        <li><strong>Refactored Oozie/Hue workflows to Apache Spark</strong>, enhancing data processing throughput and enabling complex analytical transformations at scale.</li>
+      </ul>
+      <div class="job-tech">Stack: PySpark, Apache Spark, Spark Streaming, Azure Data Factory, Azure Databricks, Azure EventHub, Hadoop, SQL, Python</div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Infosys Limited</span>
+        <span class="job-period">Nov 2017 &ndash; Jun 2021</span>
+      </div>
+      <div class="job-role">Specialist Programmer</div>
+      <div class="job-context">Multiple enterprise data engineering and backend development engagements &bull; Bengaluru, India</div>
+      <ul>
+        <li><strong>Achieved 70% reduction in manual effort</strong> by building a fully automated B2B data extraction platform on Azure Databricks / Delta Lake, delivering retailer-specific data extracts to OneDrive, SharePoint, and Amazon S3.</li>
+        <li><strong>Reduced AWS Redshift cluster maintenance costs by 28%</strong> by migrating a production cluster and associated Informatica ETL scripts, mappings, and workflows across AWS accounts.</li>
+        <li><strong>Developed and deployed a machine learning pricing model (~96% accuracy)</strong> using XGBoost and Random Forest for real-time logistics carrier rate prediction; integrated directly into live order processing.</li>
+        <li><strong>Built 3 production REST APIs</strong> in a Labor Management System (LMS) via Apigee, enabling external vendor access to labor scheduling data (shifts, absences, time-tracking) with OAuth2 security.</li>
+        <li><strong>Automated creation of ~7,000 unique onboarding graphs</strong> on a client's ETL tool using Python scripting with REST API integration, reducing provisioning time from weeks to hours.</li>
+        <li><strong>Implemented AWS Lambda functions</strong> for server-side input validation and automated file generation within the LMS API layer.</li>
+      </ul>
+      <div class="job-tech">Stack: Python, Java, PySpark, Apache Spark, Delta Lake, Azure Databricks, AWS Redshift, AWS Lambda, AWS S3, Apigee, Informatica ETL, XGBoost, Random Forest, SQL</div>
+    </div>
+  </div>
+
+  <!-- KEY PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">Key Projects &amp; Achievements</div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">Flink Streaming Pipeline 8.6x Scale-Up</span>
+        <span class="project-badge">Sitecore &bull; 2023</span>
+      </div>
+      <div class="project-desc">Profiled and redesigned a production Apache Flink data streaming pipeline serving enterprise e-commerce workloads. Identified bottlenecks in parallelism config, state backend, and checkpointing. Result: throughput from 5,000 &rarr; 43,000 RPM; SLA compliance restored for multiple clients.</div>
+      <div class="project-tech">Apache Flink, Apache Kafka, Python, AWS ECS, CloudWatch</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">Catalog Sync Pipeline Re-architecture</span>
+        <span class="project-badge">Sitecore &bull; 2022</span>
+      </div>
+      <div class="project-desc">Redesigned and migrated a catalog synchronization job from a legacy e-commerce framework to a new content search platform, eliminating redundant processing stages. Result: processing time cut 85% (4 hours &rarr; 35 minutes).</div>
+      <div class="project-tech">Python, Apache Airflow, AWS, Elasticsearch</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">Europe Dynamic Pricing ML Model</span>
+        <span class="project-badge">Infosys &bull; 2020</span>
+      </div>
+      <div class="project-desc">Built an end-to-end ML pipeline for real-time logistics carrier rate prediction (lower / expected / upper bound). Executed full lifecycle: feature engineering &rarr; model evaluation (XGBoost, Random Forest, Linear Regression) &rarr; production deployment. Result: ~96% accuracy; live in production order processing.</div>
+      <div class="project-tech">Python, XGBoost, Random Forest, Feature Engineering, REST API</div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Bachelor of Engineering &mdash; Computer Science &amp; Engineering</span>
+        <span class="edu-year">2013 &ndash; 2017</span>
+      </div>
+      <div class="edu-desc"><span class="edu-org">Visvesvaraya Technological University</span> &bull; Bengaluru, India</div>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-block">
+      <span class="skill-category">Languages:</span>
+      <span class="skill-values"> Python, Java, Golang (Go), Bash / Shell Scripting</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">Streaming &amp; Big Data:</span>
+      <span class="skill-values"> Apache Kafka, Apache Flink, Apache Spark, SparkSQL, Apache Airflow, Stream Processing, Batch Processing, ETL (Extract Transform Load)</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">Databases &amp; Storage:</span>
+      <span class="skill-values"> PostgreSQL, MySQL, Snowflake, MongoDB, DynamoDB, Elasticsearch, Redis, Delta Lake, AWS Redshift</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">Cloud &mdash; AWS:</span>
+      <span class="skill-values"> EC2, S3, ECS, Lambda, Batch, CloudWatch, IAM, Redshift</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">Cloud &mdash; Azure:</span>
+      <span class="skill-values"> Databricks, Data Factory, EventHub, Blob Storage</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">Architecture &amp; Backend:</span>
+      <span class="skill-values"> Distributed Systems, Microservices, REST API Design, High-Throughput Systems, Data Warehousing, Performance Optimization, Event-Driven Architecture</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">DevOps &amp; Tooling:</span>
+      <span class="skill-values"> Docker, CI/CD, Git, Apigee, Apache Unomi</span>
+    </div>
+    <div class="skills-block">
+      <span class="skill-category">Machine Learning:</span>
+      <span class="skill-values"> XGBoost, Random Forest, Linear Regression, Feature Engineering, Big Data Analytics</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
